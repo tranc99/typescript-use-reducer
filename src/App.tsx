@@ -2,6 +2,23 @@ import React, { useReducer } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+interface Item {
+  itemType: string,
+  name: string,
+  description: string,
+  waitTime: string,
+  price: string,
+  imgURL: string
+}
+
+interface SelectedItemState {
+  selectedItem: Item
+}
+
+type Action = {
+  type: string
+}
+
 const menuItems = [
   {
     itemType: 'pizza',
@@ -35,7 +52,7 @@ const menuOptions = menuItems.map((item) => {
 
 const initialState = {selectedItem: menuItems[0]}
 
-function reducer(state: any, action: any) {
+function reducer(state: SelectedItemState, action: Action): SelectedItemState {
   let newSelection = menuItems.find(item => item.itemType === action.type)
   if (newSelection !== undefined) {
     return {selectedItem: newSelection}
