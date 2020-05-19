@@ -6,7 +6,7 @@ const menuItems = [
   {
     itemType: 'pizza',
     name: 'The Crabby Pizza',
-    waitTime: '20 mins',
+    waitTime: '30 mins',
     price: '$30',
     imgURL: 'https://cdn.pixabay.com/photo/2018/04/07/15/03/pizza-3298685_960_720.jpg'
   },
