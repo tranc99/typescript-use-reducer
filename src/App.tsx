@@ -2,28 +2,28 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const menuItems = [
+  {
+    itemType: 'pizza',
+    name: 'The Crabby Pizza',
+    waitTime: '20 mins',
+    price: '$30',
+    imgURL: 'https://cdn.pixabay.com/photo/2018/04/07/15/03/pizza-3298685_960_720.jpg'
+  },
+  {
+    itemType: 'burger',
+    name: 'The Famous Crabby Burger',
+    waitTime: '10 mins',
+    price: '$40',
+    imgURL: 'https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_960_720.jpg'
+  }
+]
+
+let menuOptions = menuItems.map((item) => {
+  return (<option value={item.itemType}>{item.name}</option>)
+})
+
 function App() {
-
-  const menuItems = [
-    {
-      itemType: 'pizza',
-      name: 'The Crabby Pizza',
-      waitTime: '20 mins',
-      price: '$30',
-      imgURL: 'https://cdn.pixabay.com/photo/2018/04/07/15/03/pizza-3298685_960_720.jpg'
-    },
-    {
-      itemType: 'burger',
-      name: 'The Famous Crabby Burger',
-      waitTime: '10 mins',
-      price: '$40',
-      imgURL: 'https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_960_720.jpg'
-    }
-  ]
-
-  let menuOptions = menuItems.map((item) => {
-    return (<option value={item.itemType}>{item.name}</option>)
-  })
 
   return (
     <div className="App">
