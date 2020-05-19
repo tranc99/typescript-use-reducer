@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  background: #49ce50;
+  color: #fffce1;
+  display: inline-block;
+  margin: 0.75em;
+  padding: 1.35em 1.1em;
+  width: 15em;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 1em;
+  border-top-left-radius: 20px 50px;
+  border-top-right-radius: 20px 50px;
+  border-bottom-right-radius: 20px 50px;
+  border-bottom-left-radius: 20px 50px;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Raleway', Arial, sans-serif
+}
+
+select {
+  width: 15%;
+  padding:10px;
+  border-radius:10px;
+  background: #fffce1;
+  color: black;
+  display: inline-block;
+  margin: 0.75em;
+  padding: 1.35em 1.1em;
+  width: 15em;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+img {
+  border-radius: 8px;
+}
